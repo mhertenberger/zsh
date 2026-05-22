@@ -1,0 +1,4 @@
+# ignore plugins
+plugins/
+# ignore files
+.zcompdump
