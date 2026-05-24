@@ -1,4 +1,10 @@
-# ignore plugins
+# ignore installed  plugins
+./plugins/
+# ignore auto installed plugins
 plugins/
-# ignore files
-.zcompdump
+# ignore zsh compiled files
+.zcompdump*
+*.zwc
+# macOS metadata
+.DS_Store
+
