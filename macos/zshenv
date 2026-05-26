@@ -1,0 +1,18 @@
+# /etc/zsh/zshenv: system-wide .zshenv file for zsh(1).
+#
+# Global Order: zshenv, zprofile, zshrc, zlogin
+
+
+# global settings for zsh configuration files
+if [[ -z "$XDG_CONFIG_HOME" ]]
+then
+	export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+if [[ -d "$XDG_CONFIG_HOME/zsh" ]]
+then
+	export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+fi
+
+# set the path
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
